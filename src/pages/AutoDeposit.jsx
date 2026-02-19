@@ -21,6 +21,7 @@ export default function AutoDeposit() {
       });
 
       const data = await res.json();
+      console.log("API RESPONSE:", data);
 
       if (data.payment_url) {
         window.location.href = data.payment_url;
