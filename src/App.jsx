@@ -13,7 +13,7 @@ import Tournaments from './pages/Tournaments';
 import TournamentDetail from './pages/TournamentDetail';
 import GameTournaments from './pages/GameTournaments';
 import Wallet from './pages/Wallet';
-import AutoDeposit from './pages/AutoDeposit';
+import AutoDeposit from "./pages/AutoDeposit";
 import Withdraw from './pages/Withdraw';
 import Transactions from './pages/Transactions';
 import Profile from './pages/Profile';
