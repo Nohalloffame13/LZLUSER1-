@@ -838,4 +838,20 @@ export default function TournamentDetail() {
             <Button fullWidth size="lg" className="mt-4" onClick={handleJoin} loading={joining}>
               Confirm & Pay {formatCurrency(tournament.entryFee * selectedPositions.length)}
             </Button>
-        
+          )}
+                  </div>
+                        </Modal>
+
+                              {/* Error Modal */}
+                                    <Modal isOpen={errorModal.open} onClose={() => setErrorModal({ open: false, message: '' })} title="Error" size="sm">
+                                            <div className="py-4 text-center">
+                                                      <AlertCircle className="w-16 h-16 text-red-400 mx-auto mb-4" />
+                                                                <p className="text-gray-300">{errorModal.message}</p>
+                                                                          <Button fullWidth className="mt-4" onClick={() => setErrorModal({ open: false, message: '' })}>
+                                                                                      OK
+                                                                                                </Button>
+                                                                                                        </div>
+                                                                                                              </Modal>
+                                                                                                                  </Layout >
+                                                                                                                    );
+                                                                                                                    }
