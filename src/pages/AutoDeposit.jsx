@@ -11,12 +11,14 @@ export default function AutoDeposit() {
 
     try {
       const res = await fetch("/.netlify/functions/createZapOrder", {
-        method: "POST",
-        body: JSON.stringify({
-          amount,
-          userId: "test123"
-        })
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+      amount,
+      userId: "test123"
+      }),
       });
+    }
 
       const data = await res.json();
 
